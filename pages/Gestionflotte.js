@@ -80,7 +80,7 @@ export default function GererVehicule() {
                 <TableCell>ETAT</TableCell>
                 <TableCell>KILOMETRAGE</TableCell>
                 <TableCell>PRIX</TableCell>
-                        <TableCell></TableCell>
+                <TableCell></TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -126,6 +126,19 @@ export default function GererVehicule() {
                                 />
                             </TableCell>
                             <TableCell>
+                                <TextField
+                                    value={product.prenom}
+                                    onChange={(event) => {
+                                        const newProducts = [...products];
+                                        newProducts[index].prenom = event.target.value;
+                                        setProducts(newProducts);
+                                    }}
+                                    variant="standard"
+                                    size="small"
+                                    sx={{ "& input": { border: "none", borderRadius: "4px" } }}
+                                />
+                            </TableCell>
+                            <TableCell>
                                 <ButtonGroup variant="outlined" aria-label="primary button group underlined">
                                     <Button
                                         style={{
@@ -149,17 +162,6 @@ export default function GererVehicule() {
                                     >
                                         Mauvais
                                     </Button>
-                                    {/*<Button
-                                        style={{
-                                            backgroundColor: product.color === "jaune" ? "#ffeb3b" : "",
-                                            borderColor: "#fff",
-                                            color: "#000",
-                                            borderRadius: "16px"
-                                        }}
-                                        onClick={() => handleColorChange(index, "jaune")}
-                                    >
-                                        Jaune
-                                    </Button>*/}
                                 </ButtonGroup>
                             </TableCell>
                             <TableCell align="right">
