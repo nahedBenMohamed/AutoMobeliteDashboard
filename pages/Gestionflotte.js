@@ -26,6 +26,7 @@ export default function GererVehicule() {
 
         }
     ]);
+  
     const [selectedRow, setSelectedRow] = useState(-1);
 
     const handleIncrement = () => {
@@ -71,34 +72,14 @@ export default function GererVehicule() {
                     whiteSpace: "nowrap",
                 }}
             >
-                <TableHead>
-                    <TableRow>
-                        <TableCell>
-                            <Typography color="textSecondary" variant="h6">
-                                Id
-                            </Typography>
-                        </TableCell>
-                        <TableCell>
-                            <Typography color="textSecondary" variant="h6">
-                                Nom
-                            </Typography>
-                        </TableCell>
-                        <TableCell>
-                            <Typography color="textSecondary" variant="h6">
-                                Prenom
-                            </Typography>
-                        </TableCell>
-                        <TableCell>
-                            <Typography color="textSecondary" variant="h6">
-                                Disponibilite
-                            </Typography>
-                        </TableCell>
-                        <TableCell align="right">
-                            <Typography color="textSecondary" variant="h6">
-                                Quantite
-                            </Typography>
-                        </TableCell>
-                        <TableCell></TableCell>
+        <TableHead>
+            <TableRow>
+                <TableCell>MARQUE</TableCell>
+                <TableCell>MODELE</TableCell>
+                <TableCell>ANNEE</TableCell>
+                <TableCell>ETAT</TableCell>
+                <TableCell>KILOMETRAGE</TableCell>
+                <TableCell>PRIX</TableCell>
                         <TableCell></TableCell>
                     </TableRow>
                 </TableHead>
@@ -155,7 +136,7 @@ export default function GererVehicule() {
                                         }}
                                         onClick={() => handleColorChange(index, "vert")}
                                     >
-                                        libre
+                                        OK
                                     </Button>
                                     <Button
                                         style={{
@@ -166,9 +147,9 @@ export default function GererVehicule() {
                                         }}
                                         onClick={() => handleColorChange(index, "rouge")}
                                     >
-                                        indisponible
+                                        Mauvais
                                     </Button>
-                                    <Button
+                                    {/*<Button
                                         style={{
                                             backgroundColor: product.color === "jaune" ? "#ffeb3b" : "",
                                             borderColor: "#fff",
@@ -178,7 +159,7 @@ export default function GererVehicule() {
                                         onClick={() => handleColorChange(index, "jaune")}
                                     >
                                         Jaune
-                                    </Button>
+                                    </Button>*/}
                                 </ButtonGroup>
                             </TableCell>
                             <TableCell align="right">
