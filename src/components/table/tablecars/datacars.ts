@@ -41,7 +41,7 @@ export const users = [
         model: '208',
         matricule: 'AO24547',
         year: '2012',
-        kilometers: '0',
+        kilometers: '12500056',
         color: 'Rouge',
         type : 'Camping',
         cost: '29000 DT',
