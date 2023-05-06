@@ -26,13 +26,13 @@ export const RenderCell = ({ user, columnKey }: Props) => {
         case 'type':
         case 'cost':
             // Add border right to each Col except the last one
-            const colStyle: React.CSSProperties = {
-                borderRight: columnKey !== "cost" ? '1px solid #ccc' : 'none',
+/*            const colStyle: React.CSSProperties = {
+                borderRight: columnKey !== "cost" ? '5px solid #ccc' : 'none',
                 paddingRight: '8px',
                 textAlign : "center",
-            };
+            };*/
             return (
-                <Col style={colStyle}>
+                <Col  style={{textAlign: "center"}}>
                     <Row>
                         <Text b size={14} css={{ tt: 'capitalize' }}>
                             {cellValue}

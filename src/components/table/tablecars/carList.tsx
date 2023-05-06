@@ -5,7 +5,8 @@ import {columns, users} from './datacars';
 import {RenderCell} from './cell';
 
 export const TableWrapper = () => {
-    let className;
+
+    // @ts-ignore
     return (
         <Box
             css={{
@@ -33,8 +34,8 @@ export const TableWrapper = () => {
                     {(column) => (
                         <Table.Column
                             key={column.uid}
-                            hideHeader={column.uid === 'actions'}
-                            align={column.uid === 'actions' ? 'center' : 'start'}
+                            align='center'
+                            style={{ padding: '20px' }}
                         >
                             {column.name}
                         </Table.Column>
