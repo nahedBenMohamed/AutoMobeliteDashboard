@@ -11,7 +11,7 @@ import BlankLayout from "../src/layouts/blank/BlankLayout";
 import AuthLogin from "./AuthLogin";
 
 
-const Login2 = () => {
+const Login = () => {
 
     return (
         <PageContainer title="Login" description="this is Login page">
@@ -77,8 +77,8 @@ const Login2 = () => {
         </PageContainer>
     );
 };
-export default Login2;
+export default Login;
 
-Login2.getLayout = function getLayout(page: ReactElement) {
+Login.getLayout = function getLayout(page: ReactElement) {
     return <BlankLayout>{page}</BlankLayout>;
 };

@@ -27,7 +27,6 @@ export const TableWrapper = () => {
                     px: 0,
 
                 }}
-                selectionMode="multiple"
             >
 
                 <Table.Header columns={columns}>

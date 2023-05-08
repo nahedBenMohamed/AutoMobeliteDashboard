@@ -75,7 +75,7 @@ const YearlyBreakup = () => {
               <IconArrowUpLeft width={20} color="#39B69A" />
             </Avatar>
             <Typography variant="subtitle2" fontWeight="600">
-              +9%
+              +350%
             </Typography>
             <Typography variant="subtitle2" color="textSecondary">
               last year

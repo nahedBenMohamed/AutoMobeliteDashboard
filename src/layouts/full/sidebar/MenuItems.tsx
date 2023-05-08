@@ -1,6 +1,7 @@
-import {
-  IconAperture, IconCopy, IconLayoutDashboard,  IconMoodHappy, IconTypography, IconUser,IconCar
+import {IconLayoutDashboard,IconUser,IconCar,
+  IconCurrencyDollar,IconList
 } from '@tabler/icons-react';
+
 
 import { uniqueId } from 'lodash';
 
@@ -29,37 +30,18 @@ const Menuitems = [
     href: '/car',
   },
   {
-    navlabel: true,
-    subheader: 'Utilities',
-  },
-  {
     id: uniqueId(),
-    title: 'Typography',
-    icon: IconTypography,
-    href: '/utilities/typography',
+    title: 'Bilan',
+    icon: IconCurrencyDollar,
+    href: '/bilan',
   },
   {
-    id: uniqueId(),
-    title: 'Shadow',
-    icon: IconCopy,
-    href: '/utilities/shadow',
-  },
-  {
-    navlabel: true,
-    subheader: 'Extra',
-  },
-  {
-    id: uniqueId(),
-    title: 'Icons',
-    icon: IconMoodHappy,
-    href: '/icons',
-  },
-  {
-    id: uniqueId(),
-    title: 'Sample Page',
-    icon: IconAperture,
-    href: '/sample-page',
-  },
+  id: uniqueId(),
+    title: 'Liste Reservations',
+    icon: IconList,
+    href: '/listReservation',
+},
+
 ];
 
 export default Menuitems;

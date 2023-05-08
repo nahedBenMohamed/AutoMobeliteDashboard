@@ -1,14 +1,16 @@
-import { useState } from 'react';
 import { Input, Text } from '@nextui-org/react';
 import { Flex } from '../styles/flex';
 import { TableWrapper } from '../table/tablecars/carList';
 import { AddCar } from './add-car';
+
+//inused import for now
 //import { users} from "../table/carList";
+//import { useState } from 'react';
 
 export const Cars = () => {
-    const [searchText, setSearchText] = useState('');
+    /*  const [searchText, setSearchText] = useState('');
 
-/*    const handleSearchChange = (e) => {
+  const handleSearchChange = (e) => {
         setSearchText(e.target.value);
     };
 
