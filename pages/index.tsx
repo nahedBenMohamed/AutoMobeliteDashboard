@@ -3,13 +3,10 @@ import type { ReactElement } from 'react';
 import { Grid, Box, Card, Stack, Typography } from '@mui/material';
 import PageContainer from '../src/components/container/PageContainer';
 
-
-
 // components
 import Logo from "../src/layouts/full/shared/logo/Logo";
 import BlankLayout from "../src/layouts/blank/BlankLayout";
 import AuthLogin from "./AuthLogin";
-
 
 const Login = () => {
 
@@ -43,33 +40,27 @@ const Login = () => {
                     >
                         <Card elevation={9} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' }}>
                             <Box display="flex" alignItems="center" justifyContent="center">
-                                <Logo />
+                                {/*<Logo />*/}
                             </Box>
-                            <AuthLogin
-                                subtext={
-                                    <Typography variant="subtitle1" textAlign="center" color="textSecondary" mb={1}>
-                                        Your Social Campaigns
+                            <AuthLogin/>
+                            <Box>
+                                <Stack direction="row" spacing={1} justifyContent="center" mt={3}>
+                                    <Typography color="textSecondary" variant="h6" fontWeight="500">
+                                        New to Modernize?
                                     </Typography>
-                                }
-                                subtitle={
-                                    <Stack direction="row" spacing={1} justifyContent="center" mt={3}>
-                                        <Typography color="textSecondary" variant="h6" fontWeight="500">
-                                            New to Modernize?
-                                        </Typography>
-                                        <Typography
-                                            component={Link}
-                                            href="/authentication/register"
-                                            fontWeight="500"
-                                            sx={{
-                                                textDecoration: 'none',
-                                                color: 'primary.main',
-                                            }}
-                                        >
-                                            Create an account
-                                        </Typography>
-                                    </Stack>
-                                }
-                            />
+                                    <Typography
+                                        component={Link}
+                                        href="/authentication/register"
+                                        fontWeight="500"
+                                        sx={{
+                                            textDecoration: 'none',
+                                            color: 'primary.main',
+                                        }}
+                                    >
+                                        Create an account
+                                    </Typography>
+                                </Stack>
+                            </Box>
                         </Card>
                     </Grid>
                 </Grid>

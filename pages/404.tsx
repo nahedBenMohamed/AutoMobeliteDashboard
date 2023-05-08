@@ -13,7 +13,7 @@ const Error = () => (
   >
     <Container maxWidth="md">
       <img
-        src={"/images/backgrounds/errorimg.svg"}
+        src={"/images/backgrounds/404-error-idea.gif"}
         alt="404"
         style={{ width: "100%", maxWidth: "500px" }}
       />
@@ -27,7 +27,7 @@ const Error = () => (
         color="primary"
         variant="contained"
         component={Link}
-        href="/"
+        href="/dashboard"
         disableElevation
       >
         Go Back to Home
