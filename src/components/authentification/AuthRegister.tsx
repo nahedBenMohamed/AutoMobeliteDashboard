@@ -2,8 +2,9 @@ import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import Link  from 'next/link';
 
-import CustomTextField from '../src/components/forms/theme-elements/CustomTextField';
+
 import { Stack } from '@mui/system';
+import CustomTextField from "../forms/theme-elements/CustomTextField";
 
 interface registerType {
     title?: string;
