@@ -1,8 +1,8 @@
 import React, {ReactElement} from 'react';
 import { Grid, Box } from '@mui/material';
 import FullLayout from '../src/layouts/full/FullLayout';
-import DetailsCar from "../src/components/details";
 import PageContainer from "../src/components/container/PageContainer";
+import DetailsCar from "../src/components/details";
 
 
 const details = () => {

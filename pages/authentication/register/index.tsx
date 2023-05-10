@@ -4,7 +4,8 @@ import Link  from 'next/link';
 import PageContainer from '../../../src/components/container/PageContainer';
 import Logo from '../../../src/layouts/full/shared/logo/Logo';
 import BlankLayout from '../../../src/layouts/blank/BlankLayout';
-import AuthRegister from "../../AuthRegister";
+import AuthRegister from "../../../src/components/authentification/AuthRegister";
+
 
 const Register2 = () => (
   <PageContainer title="Register" description="this is Register page">

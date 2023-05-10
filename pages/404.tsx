@@ -30,7 +30,7 @@ const Error = () => (
         href="/dashboard"
         disableElevation
       >
-        Go Back to Home
+        Go Back to Dashboard
       </Button>
     </Container>
   </Box>

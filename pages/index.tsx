@@ -4,9 +4,10 @@ import { Grid, Box, Card, Stack, Typography } from '@mui/material';
 import PageContainer from '../src/components/container/PageContainer';
 
 // components
-import Logo from "../src/layouts/full/shared/logo/Logo";
+//import Logo from "../src/layouts/full/shared/logo/Logo";
 import BlankLayout from "../src/layouts/blank/BlankLayout";
-import AuthLogin from "./AuthLogin";
+import AuthLogin from "../src/components/authentification/AuthLogin";
+
 
 const Login = () => {
 

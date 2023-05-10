@@ -1,9 +1,10 @@
 import type { ReactElement } from 'react';
-import { Grid, Box, Card, Typography, Stack } from '@mui/material';
+import { Grid, Box, Card} from '@mui/material';
 import PageContainer from '../../../src/components/container/PageContainer';
-import Logo from '../../../src/layouts/full/shared/logo/Logo';
+//import Logo from '../../../src/layouts/full/shared/logo/Logo';
 import BlankLayout from '../../../src/layouts/blank/BlankLayout';
-import ForgetPass from "../../ForgetPassword";
+import ForgetPass from "../../../src/components/authentification/ForgetPassword";
+
 
 const Register2 = () => (
     <PageContainer title="Forget Password" description="this is Forget Password page">
@@ -35,7 +36,7 @@ const Register2 = () => (
                 >
                     <Card elevation={9} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' }}>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <Logo />
+                            {/*<Logo />*/}
                         </Box>
                         <ForgetPass/>
                     </Card>
